@@ -1,0 +1,10 @@
+.smallerBody {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+a:visited,
+a:link {
+  color: white !important;
+  text-decoration: underline;
+}

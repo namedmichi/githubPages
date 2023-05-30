@@ -1,0 +1,38 @@
+.mainBody {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.9rem;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 2.3rem;
+}
+.content {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.aktuelles {
+  display: flex;
+  justify-content: space-around;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+.flexCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content h1 {
+  align-self: center;
+}

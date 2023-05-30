@@ -1,0 +1,20 @@
+<div class="card">
+  <div class="left">
+    <h3>{{ item.title }}</h3>
+    <img src="{{ item.src }}" alt="" />
+  </div>
+  <div class="right">
+    <div *ngIf="item.description">
+      <p><b>Besonderheiten</b></p>
+      <p>{{ item.description }}</p>
+    </div>
+    <p><b>Sprachen</b></p>
+    <p>{{ item.language }}</p>
+    <div *ngIf="item.livesite">
+      <p><b>Live Website</b></p>
+      <p>
+        <a href="{{ item.livesitesrc }}">{{ item.livesite }} (Hier klicken)</a>
+      </p>
+    </div>
+  </div>
+</div>

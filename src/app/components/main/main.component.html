@@ -1,0 +1,58 @@
+<div class="mainBody">
+  <h2>Statistiken</h2>
+  <div class="flex">
+    <div class="flexCol">
+      <h3>Zeichen</h3>
+      <p>Insgesamt:{{ charsTotal.toLocaleString("de-DE") }}</p>
+      <ngx-charts-bar-vertical
+        [view]="view"
+        [customColors]="colorScheme"
+        [results]="Zeichendaten"
+        [gradient]="gradient"
+        [xAxis]="showXAxis"
+        [yAxis]="showYAxis"
+        (select)="onSelect($event)"
+        style="fill: #fff"
+      >
+      </ngx-charts-bar-vertical>
+    </div>
+    <div class="flexCol">
+      <h3>Wörter</h3>
+      <p>Insgesamt:{{ wordsTotal.toLocaleString("de-DE") }}</p>
+      <ngx-charts-bar-vertical
+        [view]="view"
+        [customColors]="colorScheme"
+        [results]="Woerterdaten"
+        [gradient]="gradient"
+        [xAxis]="showXAxis"
+        [yAxis]="showYAxis"
+        (select)="onSelect($event)"
+        style="fill: #fff"
+      >
+      </ngx-charts-bar-vertical>
+    </div>
+    <div class="flexCol">
+      <h3>Zeilen</h3>
+      <p>Insgesamt:{{ linesTotal.toLocaleString("de-DE") }}</p>
+      <ngx-charts-bar-vertical
+        [view]="view"
+        [customColors]="colorScheme"
+        [results]="Lienendaten"
+        [gradient]="gradient"
+        [xAxis]="showXAxis"
+        [yAxis]="showYAxis"
+        (select)="onSelect($event)"
+        style="fill: #fff"
+      >
+      </ngx-charts-bar-vertical>
+    </div>
+    <div class="content">
+      <h1>Aktuelles</h1>
+      <div class="aktuelles">
+        <div class="card" *ngFor="let item of sites">
+          <app-project-card *ngIf="item" [item]="item"></app-project-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

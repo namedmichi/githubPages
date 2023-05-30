@@ -1,0 +1,5 @@
+<div class="smallerBody">
+  <div class="card" *ngFor="let item of $smallerSites">
+    <app-project-card *ngIf="item" [item]="item"></app-project-card>
+  </div>
+</div>

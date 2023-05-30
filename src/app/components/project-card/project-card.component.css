@@ -1,0 +1,35 @@
+.card {
+  display: flex;
+  margin: 2rem;
+  flex-direction: row;
+}
+.left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.right {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+  flex-direction: column;
+}
+p {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+img {
+  width: 600px;
+}
+b {
+  font-size: 1.4rem;
+}
+h3 {
+  font-size: 2rem;
+}
+a:visited,
+a:link {
+  color: white !important;
+  text-decoration: underline;
+}
