@@ -40,7 +40,8 @@ export class SmallerComponent {
       description: '',
       language: 'HTML, CSS',
       livesite: 'Vorhanden',
-      livesitesrc: '',
+      livesitesrc:
+        'https://namedmichi.github.io/workspacestudio/news-homepage-main/index.html',
     },
     {
       title: ' Clipboard',
