@@ -3,9 +3,9 @@
 body {
   margin: 0;
   padding: 0;
-  --dark-background: #222831;
+  --dark-background: #181818;
 
-  --light-background: #393e46;
+  --light-background: #1f1f1f;
 
   --main: #4c9173;
 
@@ -13,4 +13,15 @@ body {
   font-family: "Open Sans", sans-serif;
   background-color: var(--light-background);
   color: var(--secondary) !important;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+app-footer {
+  margin-top: auto;
+}
+app-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }

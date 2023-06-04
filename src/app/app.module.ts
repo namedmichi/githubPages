@@ -11,8 +11,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './components/footer/footer.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { SmallerComponent } from './components/smaller/smaller.component';
+import { KontaktComponent } from './components/kontakt/kontakt.component';
 @NgModule({
-  declarations: [AppComponent, NavBarComponent, MainComponent, BiggerComponent, FooterComponent, ProjectCardComponent, SmallerComponent],
+  declarations: [AppComponent, NavBarComponent, MainComponent, BiggerComponent, FooterComponent, ProjectCardComponent, SmallerComponent, KontaktComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

@@ -8,9 +8,3 @@ a:link {
   color: white !important;
   text-decoration: underline;
 }
-.card:last-of-type {
-  margin-left: 35px;
-  margin-right: auto;
-  justify-self: unset;
-  align-self: unset;
-}

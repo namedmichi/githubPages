@@ -1,0 +1,15 @@
+a,
+a:visited,
+a:link {
+  color: white;
+  text-decoration: none;
+}
+.kontaktBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70dvh;
+}
+a {
+  font-size: 3rem;
+}
