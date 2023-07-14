@@ -11,6 +11,10 @@ a:link {
   color: white;
   text-decoration: none;
 }
+.centerFix {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 h1 {
   font-size: 2.9rem;
@@ -28,6 +32,7 @@ h2 {
 .aktuelles {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .flex {
   display: flex;

@@ -8,12 +8,18 @@
       <p><b>Besonderheiten</b></p>
       <p>{{ item.description }}</p>
     </div>
+    <div *ngIf="item.aufgaben">
+      <p><b>Meine Aufgaben</b></p>
+      <p>{{ item.aufgaben }}</p>
+    </div>
     <p><b>Sprachen</b></p>
     <p>{{ item.language }}</p>
     <div *ngIf="item.livesite">
       <p><b>Live Website</b></p>
       <p>
-        <a href="{{ item.livesitesrc }}">{{ item.livesite }} (Hier klicken)</a>
+        <a target="_blank" href="{{ item.livesitesrc }}"
+          >{{ item.livesite }} (Hier klicken)</a
+        >
       </p>
     </div>
   </div>

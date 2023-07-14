@@ -8,6 +8,15 @@ import { Bigger } from 'src/app/sites';
 export class BiggerComponent {
   $biggerSites: Bigger[] = [
     {
+      title: 'SEO Content',
+      src: 'assets/gitpage-images/SEOContent.png',
+      description: 'Wordpress Plugin der SEO Küche',
+      language: 'PHP, JS/JSX, HTML, SCSS',
+      livesite: '',
+      livesitesrc: '#',
+      aufgaben: 'Chefentwickler und Maintainer',
+    },
+    {
       title: 'namedTask',
       src: 'assets/gitpage-images/namedTask.png',
       description: 'Angular Projekt',
@@ -23,14 +32,6 @@ export class BiggerComponent {
       livesite: 'Vorhanden',
       livesitesrc:
         'https://namedmichi.github.io/workspacestudio/angular-test/firstTest/docs/',
-    },
-    {
-      title: 'TOP SECRET',
-      src: 'assets/gitpage-images/comingsoon.jpg',
-      description: 'Wordpress, React',
-      language: 'PHP, JSX',
-      livesite: '',
-      livesitesrc: '',
     },
   ];
 }

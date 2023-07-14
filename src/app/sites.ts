@@ -5,6 +5,7 @@ export interface Bigger {
   livesite: string;
   livesitesrc: string;
   src: string;
+  aufgaben?: string;
 }
 export interface Smaller {
   title: string;

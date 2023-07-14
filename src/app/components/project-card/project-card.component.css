@@ -1,6 +1,6 @@
 .card {
   display: flex;
-  margin: 2rem;
+  margin: 1rem;
   padding: 2rem;
   flex-direction: row;
 }

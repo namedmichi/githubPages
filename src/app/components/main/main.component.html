@@ -1,5 +1,13 @@
 <div class="mainBody">
-  <h1>namedmichi Github Pages</h1>
+  <h1>Michael Selbertinger Github Pages</h1>
+  <div class="content">
+    <h2 class="centerFix">Aktuelles</h2>
+    <div class="aktuelles">
+      <div class="card" *ngFor="let item of sites">
+        <app-project-card *ngIf="item" [item]="item"></app-project-card>
+      </div>
+    </div>
+  </div>
   <h2>Statistiken</h2>
   <div class="flex">
     <div class="flexCol">
@@ -46,14 +54,6 @@
         style="fill: #fff"
       >
       </ngx-charts-bar-vertical>
-    </div>
-    <div class="content">
-      <h1>Aktuelles</h1>
-      <div class="aktuelles">
-        <div class="card" *ngFor="let item of sites">
-          <app-project-card *ngIf="item" [item]="item"></app-project-card>
-        </div>
-      </div>
     </div>
     <div class="header">
       <h2>Karriere</h2>
