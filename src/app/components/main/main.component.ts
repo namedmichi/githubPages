@@ -50,6 +50,11 @@ export class MainComponent {
   tsWords: string = '0';
 
   tsLines: string = '0';
+
+  phpChars: string = '152584';
+  phpWords: string = '12316';
+  phpLines: string = '3761';
+
   charsTotal: number = 0;
 
   wordsTotal: number = 0;
@@ -122,12 +127,16 @@ export class MainComponent {
             value: this.cssChars,
           },
           {
-            name: 'Javascript',
-            value: this.tsChars,
+            name: 'Javascript/Typescript',
+            value: (
+              parseInt(this.jsChars) +
+              parseInt(this.tsChars) +
+              67836
+            ).toString(),
           },
           {
-            name: 'Typescript',
-            value: this.tsChars,
+            name: 'PHP',
+            value: this.phpChars,
           },
         ];
         var Woerterdaten = [
@@ -140,12 +149,16 @@ export class MainComponent {
             value: this.cssWords,
           },
           {
-            name: 'Javascript',
-            value: this.tsWords,
+            name: 'Java/Typescript',
+            value: (
+              parseInt(this.jsWords) +
+              parseInt(this.tsWords) +
+              6612
+            ).toString(),
           },
           {
-            name: 'Typescript',
-            value: this.tsWords,
+            name: 'PHP',
+            value: this.phpWords,
           },
         ];
         var Lienendaten = [
@@ -158,12 +171,16 @@ export class MainComponent {
             value: this.cssLines,
           },
           {
-            name: 'Javascript',
-            value: this.tsLines,
+            name: 'Javascript/Typescript',
+            value: (
+              parseInt(this.jsLines) +
+              parseInt(this.tsLines) +
+              2049
+            ).toString(),
           },
           {
-            name: 'Typescript',
-            value: this.tsLines,
+            name: 'PHP',
+            value: this.phpLines,
           },
         ];
         Object.assign(this, { Zeichendaten, Woerterdaten, Lienendaten });
