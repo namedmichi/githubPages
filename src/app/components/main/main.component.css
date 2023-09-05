@@ -11,6 +11,14 @@ a:link {
   color: white;
   text-decoration: none;
 }
+.headlineSpan {
+  font-size: 3.5rem;
+}
+.greaterThan {
+  width: 44px;
+  display: inline-block;
+  height: 1px;
+}
 .centerFix {
   margin-left: auto;
   margin-right: auto;
@@ -23,8 +31,11 @@ h1 {
 h2 {
   font-size: 2.3rem;
 }
+.badge {
+  margin-top: 10px;
+}
 .content {
-  margin-top: 50px;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -92,6 +103,7 @@ h2 {
   margin: 1rem;
   margin-bottom: 20px;
   border-radius: 6px;
+  min-width: 140px;
 }
 
 .timeline-component {
@@ -101,7 +113,7 @@ h2 {
 .timeline {
   display: grid;
   grid-template-rows: 1fr 6px 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .timeline-middle {
   position: relative;

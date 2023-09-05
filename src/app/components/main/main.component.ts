@@ -2,6 +2,7 @@ import { Component, NgModule } from '@angular/core';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { BrowserModule } from '@angular/platform-browser';
 import { Bigger } from 'src/app/sites';
+import $ from 'jquery';
 
 @Component({
   selector: 'app-main',
@@ -16,7 +17,7 @@ export class MainComponent {
       description: 'Wordpress Plugin der SEO Küche',
       language: 'PHP, JS/JSX, HTML, SCSS',
       livesite: '',
-      livesitesrc: '#',
+      livesitesrc: 'https://github.com/namedmichi/SEO-Content',
       aufgaben: 'Chefentwickler und Maintainer',
     },
     {
@@ -25,7 +26,7 @@ export class MainComponent {
       description: 'Angular Projekt',
       language: 'HTML, CSS, Typescript',
       livesite: 'Vorhanden',
-      livesitesrc: 'https://namedmichi.github.io/namedTask/',
+      livesitesrc: 'https://namedtask.michael-selbertinger.de',
     },
   ];
 
@@ -67,7 +68,7 @@ export class MainComponent {
     var js;
     var ts;
     var jsLines;
-    fetch('assets/CounterFile.txt')
+    fetch(location.href + '/assets/CounterFile.txt')
       .then((response) => response.text())
       .then((text) => (counterText = text))
       .then((text) => {
@@ -186,7 +187,11 @@ export class MainComponent {
         Object.assign(this, { Zeichendaten, Woerterdaten, Lienendaten });
       });
   }
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    $(document).ready(() => {
+      this.getChartData();
+    });
+  }
   Zeichendaten = [
     {
       name: 'Zeichen',
@@ -257,9 +262,7 @@ export class MainComponent {
     { name: 'Typescript', value: '#007acc' },
   ];
 
-  constructor() {
-    this.getChartData();
-  }
+  constructor() {}
 
   onSelect(event) {
     console.log(event);

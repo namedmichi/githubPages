@@ -7,9 +7,11 @@ a:link {
 .kontaktBody {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   height: 70dvh;
+  font-size: large;
 }
 a {
-  font-size: 3rem;
+  font-weight: bolder;
 }

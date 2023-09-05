@@ -13,7 +13,7 @@ export class BiggerComponent {
       description: 'Wordpress Plugin der SEO Küche',
       language: 'PHP, JS/JSX, HTML, SCSS',
       livesite: '',
-      livesitesrc: '#',
+      livesitesrc: 'https://github.com/namedmichi/SEO-Content',
       aufgaben: 'Chefentwickler und Maintainer',
     },
     {
@@ -22,16 +22,7 @@ export class BiggerComponent {
       description: 'Angular Projekt',
       language: 'HTML, CSS, Typescript',
       livesite: 'Vorhanden',
-      livesitesrc: 'https://namedmichi.github.io/namedTask/',
-    },
-    {
-      title: 'Wo in der Welt',
-      src: 'assets/gitpage-images/woinderwelt.png',
-      description: 'Erstes Angular Projekt',
-      language: 'HTML, CSS, Typescript',
-      livesite: 'Vorhanden',
-      livesitesrc:
-        'https://namedmichi.github.io/workspacestudio/angular-test/firstTest/docs/',
+      livesitesrc: 'https://namedtask.michael-selbertinger.de',
     },
   ];
 }

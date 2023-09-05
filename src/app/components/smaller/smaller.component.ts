@@ -8,6 +8,15 @@ import { Smaller } from 'src/app/sites';
 export class SmallerComponent {
   $smallerSites: Smaller[] = [
     {
+      title: 'Wo in der Welt',
+      src: 'assets/gitpage-images/woinderwelt.png',
+      description: 'Erstes Angular Projekt',
+      language: 'HTML, CSS, Typescript',
+      livesite: 'Vorhanden',
+      livesitesrc:
+        'https://namedmichi.github.io/workspacestudio/angular-test/firstTest/docs/',
+    },
+    {
       title: 'Schere Stein Papier',
       src: 'assets/gitpage-images/scheresteinpapier.png',
       description: 'Spiele gegen einen Bot',

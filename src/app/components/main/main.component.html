@@ -1,13 +1,34 @@
 <div class="mainBody">
-  <h1>Michael Selbertinger Github Pages</h1>
+  <h1>
+    <span> < / > </span>
+    Michael Selbertinger Portfolio
+  </h1>
+  <div
+    class="badge-base LI-profile-badge badge"
+    data-locale="de_DE"
+    data-size="large"
+    data-theme="dark"
+    data-type="HORIZONTAL"
+    data-vanity="michael-selbertinger-259b05288"
+    data-version="v1"
+  >
+    <a
+      class="badge-base__link LI-simple-link"
+      href="https://de.linkedin.com/in/michael-selbertinger-259b05288?trk=profile-badge"
+    ></a>
+  </div>
+
   <div class="content">
-    <h2 class="centerFix">Aktuelles</h2>
+    <h2 class="centerFix" style="margin-top: 0">Aktuelles</h2>
     <div class="aktuelles">
       <div class="card" *ngFor="let item of sites">
-        <app-project-card *ngIf="item" [item]="item"></app-project-card>
+        <a href="{{ item.livesitesrc }}" target="_blank">
+          <app-project-card *ngIf="item" [item]="item"></app-project-card>
+        </a>
       </div>
     </div>
   </div>
+
   <h2>Statistiken</h2>
   <div class="flex">
     <div class="flexCol">
@@ -70,18 +91,25 @@
           <p>Schulische Ausbildung Informatikassistent</p>
         </div>
         <div class="date dateTop">
-          <h4>April 23 - vorauss. Juli 23</h4>
+          <h4>April 23 - Juli 23</h4>
         </div>
 
         <div class="timeline-component timeline-content">
-          <h3 id="karriere">Coming soon</h3>
+          <a href="https://azonlinesolutions.de">
+            <h3 id="karriere">AZ Online Solutions</h3>
+          </a>
 
-          <p></p>
+          <p>Praktikum Full-Stack Webentwicklung</p>
         </div>
-
+        <div class="date dateTop">
+          <h4>September 23 -</h4>
+        </div>
         <div class="timeline-middle start">
           <p>Start</p>
           <div class="timeline-circle"></div>
+          <div class="timeline-circle"></div>
+        </div>
+        <div class="timeline-middle">
           <div class="timeline-circle"></div>
         </div>
         <div class="timeline-middle">
@@ -100,6 +128,15 @@
             <h3>SEO-Küche Rosenheim</h3>
           </a>
           <p>Minijob Onpage Entwickler</p>
+        </div>
+        <div class="date">
+          <h4>Juli 23 - August 24</h4>
+        </div>
+        <div class="timeline-component timeline-content">
+          <a href="https://www.seo-kueche.de">
+            <h3>SEO-Küche Rosenheim</h3>
+          </a>
+          <p>Teilzeit Webentwickler</p>
         </div>
       </div>
     </section>

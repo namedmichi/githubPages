@@ -12,15 +12,26 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { SmallerComponent } from './components/smaller/smaller.component';
 import { KontaktComponent } from './components/kontakt/kontakt.component';
+import { provideClientHydration } from '@angular/platform-browser';
+
 @NgModule({
-  declarations: [AppComponent, NavBarComponent, MainComponent, BiggerComponent, FooterComponent, ProjectCardComponent, SmallerComponent, KontaktComponent],
+  declarations: [
+    AppComponent,
+    NavBarComponent,
+    MainComponent,
+    BiggerComponent,
+    FooterComponent,
+    ProjectCardComponent,
+    SmallerComponent,
+    KontaktComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgxChartsModule,
     BrowserAnimationsModule,
   ],
-  providers: [],
+  providers: [provideClientHydration()],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
