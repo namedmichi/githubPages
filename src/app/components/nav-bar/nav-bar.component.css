@@ -33,3 +33,9 @@ a:link {
 a:visited {
   color: var(--secondary);
 }
+@media only screen and (max-width: 931px) {
+  li {
+    font-size: 1.35rem;
+    margin-left: 40px;
+  }
+}

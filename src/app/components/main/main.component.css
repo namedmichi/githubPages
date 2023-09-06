@@ -47,12 +47,15 @@ a:link {
 .aboutMeText {
   display: inline-block;
   align-self: center;
-  width: 48ch;
+  max-width: 48ch;
+  width: 55dvw;
   margin-left: 21px;
   margin-top: -10px;
   font-size: 1.1rem;
+  text-wrap: wrap;
 }
-.aboutMeLeft {
+.aboutMeLeft img {
+  margin-left: 8px;
 }
 .left {
   width: 400px;
@@ -72,7 +75,14 @@ a:link {
   margin-left: auto;
   margin-right: auto;
 }
-
+.headDiv {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.headDiv span {
+  font-size: 3rem;
+}
 h1 {
   font-size: 2.9rem;
   margin-bottom: 0;
@@ -230,4 +240,26 @@ h2 {
     margin-left: unset;
     width: 264px;
   }
+}
+@media only screen and (max-width: 1120px) {
+  .design-section {
+    transform: rotate(90deg) translate(-51px, 48px);
+    height: 910px;
+  }
+
+  .design-section h4 {
+    transform: translate(91px, -12px) rotate(-90deg);
+  }
+  .dateTop h4 {
+    transform: translate(1px, -50px) rotate(-90deg);
+  }
+
+  .design-section p {
+    transform: rotate(-90deg) translate(10px, 10px);
+  }
+  .design-section h3 {
+    transform: translateX(-66px) translateY(59px) rotate(270deg);
+  }
+}
+@media only screen and (max-width: 931px) {
 }

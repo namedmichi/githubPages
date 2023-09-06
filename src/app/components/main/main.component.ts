@@ -30,7 +30,7 @@ export class MainComponent {
     },
   ];
 
-  view: [number, number] = [600, 400];
+  view: [number, number] = [500, 400];
   htmlChars: string = '0';
   htmlWords: string = '0';
   htmlLines: string = '0';
@@ -68,7 +68,9 @@ export class MainComponent {
     var js;
     var ts;
     var jsLines;
-    fetch(location.href + '/assets/CounterFile.txt')
+    var loc = location.href as string;
+    loc = loc.replace('#karriere', '');
+    fetch(loc + '/assets/CounterFile.txt')
       .then((response) => response.text())
       .then((text) => (counterText = text))
       .then((text) => {
