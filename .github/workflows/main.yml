@@ -31,6 +31,14 @@ jobs:
           name: stats
           path: stats.txt
 
+      - name: Check for changes in stats.txt
+        id: check-changes
+        run: |
+          if git diff --exit-code stats.txt; then
+            echo "No changes in stats.txt"
+            exit 1
+          fi
+
       - name: Commit and push stats.txt
         run: |
           git config --local user.email "action@github.com"
