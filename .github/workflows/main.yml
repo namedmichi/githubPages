@@ -1,7 +1,10 @@
 name: Count Stats
 on:
-  schedule:
-    - cron: "0 0 * * *"
+  workflow_dispatch:
+    inputs:
+      manual_trigger:
+        description: 'Manually trigger the stats count'
+        type: bool
 
 jobs:
   count-stats:
