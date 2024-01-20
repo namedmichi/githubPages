@@ -30,3 +30,11 @@ jobs:
         with:
           name: stats
           path: stats.txt
+
+      - name: Commit and push stats.txt
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add stats.txt
+          git commit -m "Update stats.txt"
+          git push
