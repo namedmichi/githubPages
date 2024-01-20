@@ -36,7 +36,7 @@ jobs:
         run: |
           if git diff --exit-code stats.txt; then
             echo "No changes in stats.txt"
-            exit 1
+            exit 0
           fi
 
       - name: Commit and push stats.txt
